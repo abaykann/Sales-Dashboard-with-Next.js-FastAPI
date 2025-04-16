@@ -1,0 +1,50 @@
+# Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+
+# Uvicorn server logs
+*.log
+
+# IDE settings (jika menggunakan IDE seperti PyCharm atau VS Code)
+.vscode/
+.idea/
+
+# Dependency directories
+.Python
+pip-wheel-metadata/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# .env files (untuk konfigurasi environment yang bersifat sensitif)
+.env
+*.env
+
+# Coverage reports
+.coverage
+.coverage.*
+
+# pytest
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# FastAPI and other runtime artifacts
+*.sqlite
+*.db
+*.log
+
+# Optional: Add these if you use Docker
+docker-compose.yml
+Dockerfile
+.docker/
+
+# MacOS specific
+.DS_Store
