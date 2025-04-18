@@ -49,6 +49,10 @@ After the dependencies are installed, run the backend server using **Uvicorn**:
 uvicorn app.main:app --reload
 ```
 
+### Step 5: Rename .env_example to .env in backend/
+
+
+
 This will start the backend server, which will be available at `http://localhost:8000`.
 
 > **Note**: The backend server is set to only accept requests from the frontend running on **`http://localhost:3000`**. If your frontend is running on a different port, you may need to adjust the CORS settings in the backend configuration.
