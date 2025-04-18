@@ -1,7 +1,6 @@
 import React from "react";
 import { Input, Button } from "antd";
-
-const { TextArea } = Input;
+import TextArea from "antd/lib/input/TextArea";
 
 interface ChatInputProps {
   question: string;
@@ -10,7 +9,12 @@ interface ChatInputProps {
   loading: boolean;
 }
 
-const ChatInput: React.FC<ChatInputProps> = ({ question, setQuestion, handleAskQuestion, loading }) => {
+const ChatInput: React.FC<ChatInputProps> = ({
+  question,
+  setQuestion,
+  handleAskQuestion,
+  loading,
+}) => {
   return (
     <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", width: "100%" }}>
       <TextArea
@@ -20,7 +24,9 @@ const ChatInput: React.FC<ChatInputProps> = ({ question, setQuestion, handleAskQ
         size="large"
         rows={4}
         style={{ marginBottom: "10px" }}
-        disabled={loading}
+        disabled={loading} 
+        count={undefined} 
+        onClear={undefined} 
       />
       <Button
         type="primary"

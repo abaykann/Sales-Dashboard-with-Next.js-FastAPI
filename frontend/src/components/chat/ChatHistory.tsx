@@ -1,8 +1,6 @@
-// src/components/ChatHistory.tsx
-
 import React from "react";
 import { Card, Typography } from "antd";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
 
 const { Text } = Typography;
 
@@ -12,11 +10,11 @@ interface ChatHistoryProps {
 
 const ChatHistory: React.FC<ChatHistoryProps> = ({ history }) => {
   return (
-    <>
+    <div>
       {history.map((chat, index) => (
         <div key={index} style={{ marginTop: "20px" }}>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
@@ -64,7 +62,7 @@ const ChatHistory: React.FC<ChatHistoryProps> = ({ history }) => {
           )}
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
