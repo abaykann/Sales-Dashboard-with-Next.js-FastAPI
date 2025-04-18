@@ -1,0 +1,21 @@
+{
+  "site": {
+    "title": "AntNext",
+    "desc": "Menggunakan Ant-Design 5 dengan Next.js 13 dan Styled Components (Emotion)"
+  },
+  "sidebar": {
+    "dashboard": "Dasbor",
+    "table": "Tabel",
+    "error": "Kesalahan",
+    "error:403": "Tidak Diizinkan",
+    "error:404": "Tidak Ditemukan",
+    "error:500": "Kesalahan Server",
+    "sales": "Penjualan",
+    "chat": "Obrolan AI"
+  },
+  "theme": {
+    "light": "terang",
+    "dark": "gelap",
+    "system": "sistem"
+  }
+}

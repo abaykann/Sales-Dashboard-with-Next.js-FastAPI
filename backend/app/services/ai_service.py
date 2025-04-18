@@ -4,14 +4,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+GEMINI_API_URL = os.getenv("GEMINI_API_URL")
 
 def generate_ai_response(user_question: str) -> dict:
-    """
-    Menggunakan Google Gemini untuk menghasilkan jawaban.
-    Model yang digunakan: gemini-2.0-flash
-    """
     body = {
         "contents": [{
             "parts": [{"text": user_question}]
@@ -24,7 +19,7 @@ def generate_ai_response(user_question: str) -> dict:
             params={"key": GEMINI_API_KEY},
             json=body,
             headers={"Content-Type": "application/json"},
-            
+            verify=False
         )
 
         if response.status_code != 200:

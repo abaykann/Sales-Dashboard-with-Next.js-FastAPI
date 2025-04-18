@@ -1,14 +1,12 @@
 from fastapi import FastAPI
 from app.controllers.data_controller import router as data_router
 from app.controllers.ai_controller import router as ai_router
-from app.config import configure_app  # Untuk mengonfigurasi CORS
+from app.config import configure_app  
 
 app = FastAPI()
 
-# Menambahkan CORS Middleware
 configure_app(app)
 
-# Menambahkan routes
 app.include_router(data_router)
 app.include_router(ai_router)
 

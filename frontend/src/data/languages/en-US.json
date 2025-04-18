@@ -1,0 +1,21 @@
+{
+  "site": {
+    "title": "AntNext",
+		"desc": "Using Ant-Design 5 with Next.js 13 and Tailwind CSS and Styled Components (Emotion)"
+  },
+	"sidebar": {
+		"dashboard": "Dashboard",
+		"table": "Table",
+		"error": "Error",
+		"error:403": "Not Authorized",
+		"error:404": "Not Found",
+		"error:500": "Internal Server Error",
+		"sales": "Sales Representatives",
+		"chat": "Chat AI"
+	},
+	"theme": {
+		"light": "light",
+		"dark": "dark",
+		"system": "system"
+	}
+}
